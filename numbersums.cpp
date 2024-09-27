@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    set<int> s, manolis;
+    set<int> s, set;
     int n;
     int a;
     vector<int> coins;
@@ -14,8 +14,8 @@ int main() {
     }
     s.insert(0);
     for(int i=0; i<n; i++){
-        manolis=s;
-        for(auto k : manolis){
+        set=s;
+        for(auto k : set){
             s.insert(k+coins[i]);
         }
     }
